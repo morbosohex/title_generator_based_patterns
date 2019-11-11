@@ -5,6 +5,16 @@ The title generator provide multiple commands in order to generate and manage a 
 
 
 
+You can run this command to see the demo of this projects:
+
+```bash
+streamlit run https://raw.githubusercontent.com/morbosohex/title_generator_based_patterns/master/TGBP_APP.py
+```
+
+
+
+
+
 Commands:
 
 | Command                                    | Description                                                  |
@@ -62,35 +72,24 @@ sudo pip install --editable .
     Generate patterns from given certain hyperparameter
   
   Options:
-    -i, --init-label-num INTEGER RANGE
-                                    number of labels in each pattern of no-
-                                    duplicated label
+    -i, --init-label-num INTEGER RANGE number of labels in each pattern of noduplicated label
                                     
-    -m, --must_include_label TEXT   
-    																label must contained in each unique pattern
+    -m, --must_include_label TEXT   label must contained in each unique pattern
     
-    -l, --min_words_num INTEGER RANGE
-                                    expand pattern setup, minimum words in each
-                                    pattern
+    -l, --min_words_num INTEGER RANGE expand pattern setup, minimum words in each pattern
                                     
-    -h, --max_words_num INTEGER RANGE
-                                    expand pattern setup, maximum words in each
-                                    pattern
+    -h, --max_words_num INTEGER RANGE expand pattern setup, maximum words in each pattern
                                     
-    -u, --max_num_unique_label INTEGER RANGE
-                                    maximum unique labels in each pattern
+    -u, --max_num_unique_label INTEGER RANGE maximum unique labels in each pattern
                                     
-    -p, --priority_limit INTEGER RANGE
-                                    lowest priority of each pattern, `1` means
-                                    highest
+    -p, --priority_limit INTEGER RANGE lowest priority of each pattern, `1` means highest
                                     
-    -o, --output TEXT               patterns file to output (default =
-                                    './patterns.csv')
-    --help                          Show this message and exit.
+    -o, --output TEXT patterns file to output (default ='./patterns.csv')
+    --help  Show this message and exit.
   ```
-
   
-
+  
+  
 - If you don't want tune these parameters by yourself, you can just run `title pattern` to quicklook how it goes
 
 - After you run `title pattern`, you will get a folder `patterns` in `<root package dir>`which is a backup folder for patterns you generated, meanwhile you will get a csv file `patterns.csv` in `<root package dir> `, this csv file will be used to generate title later.
